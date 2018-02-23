@@ -11,9 +11,11 @@ Sometimes you just want to kill time, other time, you just want to have some fun
 ### Useful links 
 
 https://giphy.com/
+</br>
 https://developers.giphy.com/
 
 ### This project is created and maintained by 
 
 Moi: github.com/ASKyzer
+</br>
 Check out my other projects.
