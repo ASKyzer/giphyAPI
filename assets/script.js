@@ -19,6 +19,8 @@ function displayCharacterGifs(){
   //   .catch((err) => {
   //
   // })
+  // clear the cartoonImages div before each button is pressed
+  $("#cartoonImages").empty();
 
   // takes the data-name attribute of the particular button pressed
   var cartoonChar = $(this).attr("data-name");
@@ -38,13 +40,26 @@ function displayCharacterGifs(){
     for (j = 0; j < results.length; j++){
       //log results[j]
       console.log(results[j].title);
+
+    // creat a div for the results to go into
+    var resultsDiv = $("<div class ='gifResult'>");
     // get the rating for the gif
-    var ratings = $("<p class='rating'>").text("Rating: " + results[j].rating);
+    var ratings = $("<p class='rating'>");
+      // sets the text of the ratings <p>
+      ratings.text("Rated: " + results[j].rating);
     // log the rating for the results
     console.log(ratings);
     // appends the rating to the DOM in the dive cartoonImages
-    $("#cartoonImages").append(ratings)
+    resultsDiv.append(ratings);
 
+    // grabs the images associated with the results
+    var cartoonGifs = $("<img>");
+    //set the src atrributes of the cartoon gifs still images with fixed height
+    cartoonGifs.attr("src", results[j].images.fixed_height_still.url);
+    // append the gifs to the resultsDiv
+    resultsDiv.append(cartoonGifs);
+    // appends the resultsDiv into the Dom of the cartoonImages div
+    $("#cartoonImages").append(resultsDiv);
 
     }
 
@@ -98,27 +113,6 @@ $(document).on("click", ".characterButton", displayCharacterGifs);
 
 // renders the buttons in the DOM
 renderButtons();
-
-
-
-// we need to query the URL for giphy to get the response object with our search criteria
-// var newGif = [];
-//
-// /// Gif Search
-// client.search('gifs', {"q": "cats"})
-//   .then((response) => {
-//     response.data.forEach((gifObject) => {
-//       console.log(gifObject)
-//     })
-//   })
-//   .catch((err) => {
-//
-//   })
-//
-// //javascript, jQuery
-// var xhr = $.get("http://api.giphy.com/v1/gifs/search?q=ryan+gosling&api_key=YOUR_API_KEY&limit=5");
-// xhr.done(function(data) { console.log("success got data", data); });
-//
 
 // function to render new button onto the buttons-row in the dom using the id tag cartoon Buttons.
 
