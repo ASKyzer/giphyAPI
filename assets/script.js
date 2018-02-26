@@ -19,6 +19,7 @@ function addButtons() {
     // append the new button to the DOM div cartoonButtons
     $("#cartoonButtons").prepend(newButton);
 
+
   } // end of for loop add buttons to the DOM
 } // end of addButtons Function
 
@@ -34,6 +35,7 @@ $("#submitButton").on("click", function(event){
   var characterInput = $("#userInput").val().trim();
   // add the user input to the string of cartoonChar
   topics.push(characterInput);
+
   // when the submit button is clicked, it puts the button into the Dom with the item the user chose
   addButtons();
 
