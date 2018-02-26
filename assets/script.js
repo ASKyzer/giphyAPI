@@ -19,7 +19,6 @@ function addButtons() {
     // append the new button to the DOM div cartoonButtons
     $("#cartoonButtons").prepend(newButton);
 
-
   } // end of for loop add buttons to the DOM
 } // end of addButtons Function
 
@@ -38,6 +37,8 @@ $("#submitButton").on("click", function(event){
 
   // when the submit button is clicked, it puts the button into the Dom with the item the user chose
   addButtons();
+  // clear the input box after the user submit input
+  $('#userInput').val('');
 
 }); // end of on click event function for the submit button
 

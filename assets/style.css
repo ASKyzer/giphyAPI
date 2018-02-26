@@ -3,7 +3,6 @@ body {
   margin: 0;
   padding: 0;
 }
-
 .search-row {
   background-color: pink;
   border-bottom: 3px solid teal;
@@ -14,6 +13,7 @@ body {
   font-size: 24px;
   font-weight: bold;
   margin-right: 5px;
+  margin-bottom: 0;
 }
 #userInput {
   width: 250px;
@@ -26,10 +26,11 @@ body {
 }
 #cartoonButtons {
   padding-top: 5px;
+  padding-left: 15px;
+  padding-right: 0px;
   background-color: pink;
   min-height: 100vh;
 }
-
 .characterButton {
   background-color: teal;
   color: white;
@@ -37,10 +38,9 @@ body {
   margin: 5px 0px;
   padding: 3px;
   width: 90%;
-
 }
 #cartoonImages {
-  padding: 5px 5px;
+  padding: 5px 0px;
 }
 .gifResult {
   display: inline-block;
