@@ -3,6 +3,16 @@ body {
   margin: 0;
   padding: 0;
 }
+.title-row {
+  background-color: teal;
+
+  color: Pink;
+}
+.title-row h1 {
+  height: 75px;
+  line-height: 75px;
+  text-align: center;
+}
 .search-row {
   background-color: pink;
   border-bottom: 3px solid teal;
