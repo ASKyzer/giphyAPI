@@ -1,37 +1,27 @@
-.carousel-item img {
-  height: 300px;
-}
-.carousel-caption {
-  background-color: rgba(255, 255, 255, 0.7);
-}
-    .carousel-caption h1{
-      color: black;
-      font-size: 55px;
-    }
-    .carousel-caption p{
-      color: #212121;
-      font-size: 25px;
-    }
+
 .search-row {
   background-color: pink;
-  border: 1px solid black;
   padding: 15px;
 }
     input {
-      height: 40px;
-      width: 100%;
-
+      
     }
     .submitBtn {
       height: 40px;
       width: 100px;
       border-radius: 0;
     }
-#gifButtons {
+#cartoonButtons {
   background-color: pink;
-  height: 100vh;
+  min-height: 100vh;
 }
-#gifImages {
+
+.characterButton {
   background-color: teal;
+  color: white;
+  height: 40px;
+  margin: 5px 5px;
+  padding: 5px;
+  width: 100%;
 
 }
