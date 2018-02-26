@@ -1,17 +1,31 @@
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .search-row {
   background-color: pink;
-  padding: 15px;
+  border-bottom: 3px solid teal;
+  padding: 25px 0px 20px 0px;
 }
-    input {
-      
-    }
-    .submitBtn {
-      height: 40px;
-      width: 100px;
-      border-radius: 0;
-    }
+.inputLabel {
+  color: teal;
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 5px;
+}
+#userInput {
+  width: 250px;
+}
+#submitButton {
+  background-color: teal;
+  border-radius: 5px;
+  color: white;
+  width: 80px;
+}
 #cartoonButtons {
+  padding-top: 5px;
   background-color: pink;
   min-height: 100vh;
 }
@@ -24,4 +38,17 @@
   padding: 5px;
   width: 100%;
 
+}
+.gifResult {
+  display: inline-block;
+  margin: 20px;
+  border: 1px solid black;
+  padding: 3px;
+}
+.gifRating {
+  text-align: center;
+  color: teal;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 5px;
 }
