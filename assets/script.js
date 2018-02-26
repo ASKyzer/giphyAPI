@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 // create some preset buttons that will display at page load
-var topics = ["winnie the pooh", "tweety bird", "animaniacs", "snow white", "charlie brown", "totoro", "sailor moon", "goofy dog", "eyor", "cinderella", "buzz lightyear", "woody", "garfield", "snoopy", "homer simpson", "roger the alien", "robot chicken"];
+var topics = ["tweety bird", "animaniacs", "snow white", "charlie brown", "totoro", "sailor moon", "ren and stimpy", "mulan", "cinderella", "buzz lightyear", "woody", "garfield", "snoopy", "homer simpson", "roger the alien", "robot chicken", "winnie the pooh"];
 
 // function to render new buttons based on user userInput
 function addButtons() {
@@ -109,7 +109,7 @@ function displayCharacterGifs(){
         $(this).attr("src", $(this).attr("data-still"));
         $(this).attr("data-state", "still");
 
-      } // end of if statement comparing data-state to still or animate
+      } // end of if/else statement comparing data-state to still or animate
     }) // end of animate gif on click function
   }) // end of ajax query
 } // end of displayCharacterGifs function
